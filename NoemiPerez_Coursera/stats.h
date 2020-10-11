@@ -9,32 +9,112 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Header file for the statistical analysis functions
  *
- * <Add Extended Description Here>
+ * File that documents all the functions included in stats.c
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Noemi Perez
+ * @date October 10th, 2020
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Print statistics of a dataset
  *
- * <Add Extended Description Here>
+ * Function that prints the statistics of an array including 
+ * minimum, maximum, mean, and median.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param * numbers: Pointer to a dataset
  *
- * @return <Add Return Informaiton here>
+ * @return no return
  */
 
+void print_statistics(unsigned char * numbers);
+
+/**
+ * @brief Print array on console
+ *
+ * Given an array of data and a length, prints the array to the screen
+ *
+ * @param * numbers: Pointer to a dataset
+ *
+ * @return no return
+ */
+
+void print_array(unsigned char * numbers);
+
+/**
+ * @brief Calculate median
+ *
+ * Given an array of data and a length, returns the median value
+ *
+ * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
+ *
+ * @return median value of the numbers in the given array
+ */
+
+unsigned char find_median(unsigned char * numbers, int count);
+
+/**
+ * @brief Calculate mean
+ *
+ * Given an array of data and a length, returns the mean value
+ *
+ * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
+ *
+ * @return average value of the numbers in the given array.
+ */
+
+unsigned char find_mean(unsigned char * numbers, int count);
+
+
+/**
+ * @brief Find maximum value
+ *
+ * Given an array of data and a length, returns the maximum
+ *
+ * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
+ *
+ * @return maximum number in the given array.
+ */
+
+unsigned char find_maximum(unsigned char * numbers, int count);
+
+
+/**
+ * @brief Find minimum value
+ *
+ * Given an array of data and a length, returns the minimum
+ *
+ * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
+ *
+ * @return minimum number in the given array.
+ */
+
+unsigned char find_minimum(unsigned char * numbers, int count);
+
+
+
+/**
+ * @brief Sort an array from largest to smallest.
+ *
+ * Given an array of data and a length, sorts the array from largest to smallest. 
+ * The zeroth element is the largest value and the last element (n.1) is the smallest value.
+ * 
+ * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
+ *
+ * @return array with sorted elements
+ */
+
+unsigned char * sort_array(unsigned char * numbers, int count);
 
 #endif /* __STATS_H__ */

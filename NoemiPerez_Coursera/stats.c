@@ -9,13 +9,14 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief Statistical analysis functions
  *
- * <Add Extended Description Here>
+ * This file contains all the functions to perform statistical analysis on a given dataset
+ * as well as the funtions to display and format the results.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Noemi Perez
+ * @date October 10th, 2020
  *
  */
 
@@ -40,4 +41,42 @@ void main() {
 
 }
 
-/* Add other Implementation File Code Here */
+void print_statistics(unsigned char * numbers){
+
+
+}
+
+void print_array(unsigned char * numbers){
+
+
+
+}
+
+unsigned char find_median(unsigned char * numbers, int count){
+
+
+}
+
+unsigned char find_mean(unsigned char * numbers, int count){
+
+
+
+}
+
+unsigned char find_maximum(unsigned char * numbers, int count){
+
+
+
+}
+
+unsigned char find_minimum(unsigned char * numbers, int count){
+
+
+
+}
+
+unsigned char * sort_array(unsigned char * numbers, int count){
+
+
+  
+}
