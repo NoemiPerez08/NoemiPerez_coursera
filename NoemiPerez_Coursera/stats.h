@@ -29,11 +29,12 @@
  * minimum, maximum, mean, and median.
  *
  * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
  *
  * @return no return
  */
 
-void print_statistics(unsigned char * numbers);
+void print_statistics(unsigned char * numbers, int count);
 
 /**
  * @brief Print array on console
@@ -41,16 +42,17 @@ void print_statistics(unsigned char * numbers);
  * Given an array of data and a length, prints the array to the screen
  *
  * @param * numbers: Pointer to a dataset
+ * @param int count: Array data length
  *
  * @return no return
  */
 
-void print_array(unsigned char * numbers);
+void print_array(unsigned char * numbers, int count);
 
 /**
  * @brief Calculate median
  *
- * Given an array of data and a length, returns the median value
+ * Given an array of data and a length, returns the median value.
  *
  * @param * numbers: Pointer to a dataset
  * @param int count: Array data length
@@ -63,7 +65,7 @@ unsigned char find_median(unsigned char * numbers, int count);
 /**
  * @brief Calculate mean
  *
- * Given an array of data and a length, returns the mean value
+ * Given an array of data and a length, returns the mean value.
  *
  * @param * numbers: Pointer to a dataset
  * @param int count: Array data length
@@ -77,7 +79,7 @@ unsigned char find_mean(unsigned char * numbers, int count);
 /**
  * @brief Find maximum value
  *
- * Given an array of data and a length, returns the maximum
+ * Given an array of data and a length, returns the maximum value. 
  *
  * @param * numbers: Pointer to a dataset
  * @param int count: Array data length
@@ -91,7 +93,7 @@ unsigned char find_maximum(unsigned char * numbers, int count);
 /**
  * @brief Find minimum value
  *
- * Given an array of data and a length, returns the minimum
+ * Given an array of data and a length, returns the minimum value.
  *
  * @param * numbers: Pointer to a dataset
  * @param int count: Array data length
@@ -107,14 +109,14 @@ unsigned char find_minimum(unsigned char * numbers, int count);
  * @brief Sort an array from largest to smallest.
  *
  * Given an array of data and a length, sorts the array from largest to smallest. 
- * The zeroth element is the largest value and the last element (n.1) is the smallest value.
+ * The zeroth element is the largest value and the last element (n-1) is the smallest value.
  * 
  * @param * numbers: Pointer to a dataset
  * @param int count: Array data length
  *
- * @return array with sorted elements
+ * @return no return
  */
 
-unsigned char * sort_array(unsigned char * numbers, int count);
+void sort_array(unsigned char * numbers, int count);
 
 #endif /* __STATS_H__ */
